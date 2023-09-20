@@ -22,6 +22,4 @@ def change_image(filename):
     # delete old image
     os.remove(filename)
 
-current_dir = os.getcwd()
-change_images_of_directory(current_dir)
 

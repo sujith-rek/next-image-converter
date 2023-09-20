@@ -26,5 +26,3 @@ def change_data_of_dir(dir_path):
             else:
                 change_data_of_file(file)
 
-file_path = os.getcwd()
-change_data_of_dir(file_path)
