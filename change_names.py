@@ -21,8 +21,8 @@ def change_data_of_dir(dir_path):
     # crawl through all files and folders of dir_path
     for root, dirs, files in os.walk(dir_path):
         for file in files:
-            if file.isdir():
-                change_data_of_dir(file)
+            if os.path.isdir(file):
+                change_data_of_dir(os.path.join(root, file))
             else:
-                change_data_of_file(file)
+                change_data_of_file(os.path.join(root, file))
 
